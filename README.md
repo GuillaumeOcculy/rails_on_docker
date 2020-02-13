@@ -1,24 +1,32 @@
-# README
+## Stack
+Ruby 2.7
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails 6.0.2
 
-Things you may want to cover:
+Postgresql 12.1
 
-* Ruby version
+## Description
+This application shows how to configure Rails 6 with PostgreSQL & Webpack on Docker.
 
-* System dependencies
+I created the rails application with `rails new rails_on_docker -d=postgresql`
 
-* Configuration
+### Requirements
 
-* Database creation
+Install [Docker](https://www.docker.com/) on your local machine.
 
-* Database initialization
+```bash
+$ git clone git@github.com:GuillaumeOcculy/rails_on_docker.git
+$ cd rails_on_docker
+```
+### To run the server
+```bash
+$ docker-compose up
 
-* How to run the test suite
+Starting rails_on_docker_db_1 ... done
+Starting rails_on_docker_web_1 ... done
+Attaching to rails_on_docker_db_1, rails_on_docker_web_1
+...
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Check on your browser [http://localhost:3000/](http://localhost:3000/).
+Enjoy !
