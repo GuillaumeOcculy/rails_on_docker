@@ -19,6 +19,7 @@ default: &default
   encoding: unicode
   host: db # From docker-compose service's name
   username: postgres
+  password: <%= ENV['PG_PASSWORD'] %> # From web's service environment
 
 development:
   <<: *default
